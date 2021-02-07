@@ -32,8 +32,10 @@
                                 <rect key="frame" x="86" y="184" width="221" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="+"/>
+                                    <segment title="-"/>
+                                    <segment title="×"/>
+                                    <segment title="÷"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIK-e8-qLm">
@@ -46,9 +48,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rba-2c-DiH">
-                                <rect key="frame" x="20" y="305" width="105" height="44"/>
+                                <rect key="frame" x="20" y="305" width="374" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -58,9 +60,9 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="rba-2c-DiH" id="7uH-CV-5YP"/>
-                        <outlet property="label1" destination="ToM-yW-aZA" id="qX5-Jr-MNQ"/>
-                        <outlet property="label2" destination="Q5r-AA-Wso" id="f8d-GN-xe9"/>
-                        <outlet property="segementedControl" destination="0CA-xY-z0c" id="y3e-zc-b7C"/>
+                        <outlet property="segementedControl" destination="0CA-xY-z0c" id="7cV-vC-xUv"/>
+                        <outlet property="textField1" destination="ToM-yW-aZA" id="qX5-Jr-MNQ"/>
+                        <outlet property="textField2" destination="Q5r-AA-Wso" id="f8d-GN-xe9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
