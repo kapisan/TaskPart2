@@ -8,13 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet private weak var textField1: UITextField!
     @IBOutlet private weak var textField2: UITextField!
     @IBOutlet private weak var segementedControl: UISegmentedControl!
     @IBOutlet private weak var label: UILabel!
 
-    @IBAction func buttonAction(_ sender: AnyObject) {
+    @IBAction private func buttonAction(_ sender: AnyObject) {
         let textFieldValue1 = Int(textField1.text!) ?? 0
         let textFieldValue2 = Int(textField2.text!) ?? 0
         let index = segementedControl.selectedSegmentIndex
