@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  TaskPart2
-//Users/niwashuuhei/Desktop/AppSalon/TaskPart2
+//  Users/niwashuuhei/Desktop/AppSalon/TaskPart2
 //
 //  Created by niwa  shuhei on 2021/02/06.
 //
