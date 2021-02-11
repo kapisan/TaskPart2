@@ -19,29 +19,30 @@ class ViewController: UIViewController {
         let textFieldValue2 = Int(textField2.text!) ?? 0
         let index = segementedControl.selectedSegmentIndex
 
+        let result: String
+
         switch index {
         case 0:
-            let total = textFieldValue1 + textFieldValue2
-            label.text = String(total)
+            result = String(textFieldValue1 + textFieldValue2)
 
         case 1:
-            let total = textFieldValue1 - textFieldValue2
-            label.text = String(total)
+             result = String(textFieldValue1 - textFieldValue2)
 
         case 2:
-            let total = textFieldValue1 * textFieldValue2
-            label.text = String(total)
+             result = String(textFieldValue1 * textFieldValue2)
 
         case 3:
             if textFieldValue2 == 0 {
-                label.text = "割る数には0以外を入力してください"
+              result = "割る数には0以外を入力してください"
             } else {
-                let total = textFieldValue1 / textFieldValue2
-                label.text = String(total)
+                 result = String(textFieldValue1 / textFieldValue2)
             }
 
         default:
             print("選択されていません")
+            result = "選択されていません"
         }
+
+        label.text = result
     }
 }
